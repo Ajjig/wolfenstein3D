@@ -63,6 +63,8 @@ fclean : clean
 	@$(MAKE) clean -C $(MLX_DIR)
 	@echo "$(RED)" "full cleaning..."
 
+bonus : $(NAME)
+
 re : fclean all
 	@echo "$(PURPLE)" "remaking"
 
