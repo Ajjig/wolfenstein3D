@@ -7,8 +7,8 @@ NAME = cub3d
 INCLUDE = include
 HEADER = $(INCLUDE)/cub.h
 
-CC = cc
-CFLAGS = -Wall -Wextra -Werror -g
+CC = clang
+CFLAGS = -Wall -Wextra -Werror -O3
 CFLAGS += -Imlx
 
 LIBFT_DIR = libft

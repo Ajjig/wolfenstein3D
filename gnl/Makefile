@@ -2,11 +2,11 @@ RED=$'\x1b[31m
 GREEN=$'\x1b[32m
 PURPLE=$'\x1b[35m
 
-CFILES = get_next_line.c  get_next_line_utils.c 
+CFILES = get_next_line.c  get_next_line_utils.c
 OFILES = $(CFILES:%.c=%.o)
 
-CC = gcc
-W = -c -Wall -Werror -Wextra
+CC = clang
+W = -c -Wall -Werror -Wextra -Oz
 HEADER = get_next_line.h
 NAME = nextline.a
 
@@ -19,7 +19,7 @@ $(NAME) : $(OFILES)
 
 
 %.o : %.c $(HEADER)
-	@$(CC) $(FLAGS) -c $^ 
+	@$(CC) $(FLAGS) -c $^
 clean:
 	@rm -rf $(OFILES) get_next_line.h.gch
 fclean : clean

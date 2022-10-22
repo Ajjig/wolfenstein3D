@@ -11,7 +11,7 @@ CFILES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isdigit.c
 OFILES = $(CFILES:%.c=%.o)
 
 CC = gcc
-W = -c -Wall -Werror -Wextra -g
+W = -c -Wall -Werror -Wextra -Oz
 INC = libft.h
 NAME = libft.a
 
@@ -24,7 +24,7 @@ $(NAME) : $(OFILES) $(INC)
 
 %.o : %.c $(INC)
 	@$(CC) $(CFILES) -c $<
-	
+
 clean:
 	@rm -f $(OFILES)
 
