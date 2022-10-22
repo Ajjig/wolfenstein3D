@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_data.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboudoun <aboudoun@student.42.fr>          +#+  +:+       +#+        */
+/*   By: majjig <majjig@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 17:35:09 by aboudoun          #+#    #+#             */
-/*   Updated: 2022/10/16 22:30:34 by aboudoun         ###   ########.fr       */
+/*   Updated: 2022/10/22 04:47:15 by majjig           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 void	init_data(t_data *data)
 {
-	data->game = ft_calloc(1, sizeof(t_game));
-	data->player = ft_calloc(1, sizeof(t_player));
-	data->rays_dist = ft_calloc(1, sizeof(double) * WIN_WIDTH);
-	data->img = ft_calloc(1, sizeof(t_img));
-	data->img_game = ft_calloc(1, sizeof(t_img));
-	data->rays_x = ft_calloc(1, sizeof(double) * WIN_WIDTH);
-	data->rays_y = ft_calloc(1, sizeof(double) * WIN_WIDTH);
-	data->ray_angle = ft_calloc(1, sizeof(double) * WIN_WIDTH);
-	data->is_horizontal = ft_calloc(1, sizeof(int) * WIN_WIDTH);
+	data->game = calloc(1, sizeof(t_game));
+	data->player = calloc(1, sizeof(t_player));
+	data->rays_dist = calloc(1, sizeof(double) * WIN_WIDTH);
+	data->img = calloc(1, sizeof(t_img));
+	data->img_game = calloc(1, sizeof(t_img));
+	data->rays_x = calloc(1, sizeof(double) * WIN_WIDTH);
+	data->rays_y = calloc(1, sizeof(double) * WIN_WIDTH);
+	data->ray_angle = calloc(1, sizeof(double) * WIN_WIDTH);
+	data->is_horizontal = calloc(1, sizeof(int) * WIN_WIDTH);
 }
 
 void	init_images(t_data *data)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_pos.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboudoun <aboudoun@student.42.fr>          +#+  +:+       +#+        */
+/*   By: majjig <majjig@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 17:04:37 by aboudoun          #+#    #+#             */
-/*   Updated: 2022/10/16 22:30:06 by aboudoun         ###   ########.fr       */
+/*   Updated: 2022/10/22 04:47:05 by majjig           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static void	init_minimap(t_data *data)
 {
-	data->minimap = ft_calloc(1, sizeof(t_minimap));
+	data->minimap = calloc(1, sizeof(t_minimap));
 	data->minimap->p_box = 8;
 	data->minimap->box = 6;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_path.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboudoun <aboudoun@student.42.fr>          +#+  +:+       +#+        */
+/*   By: majjig <majjig@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 12:21:02 by aboudoun          #+#    #+#             */
-/*   Updated: 2022/10/16 22:30:12 by aboudoun         ###   ########.fr       */
+/*   Updated: 2022/10/22 04:47:07 by majjig           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,11 @@ void	check_elements_path(t_data *data)
 	t_img		*west;
 	t_img		*east;
 
-	data->sprite = ft_calloc(1, sizeof(t_sprite));
-	north = ft_calloc(1, sizeof(t_img));
-	south = ft_calloc(1, sizeof(t_img));
-	west = ft_calloc(1, sizeof(t_img));
-	east = ft_calloc(1, sizeof(t_img));
+	data->sprite = calloc(1, sizeof(t_sprite));
+	north = calloc(1, sizeof(t_img));
+	south = calloc(1, sizeof(t_img));
+	west = calloc(1, sizeof(t_img));
+	east = calloc(1, sizeof(t_img));
 	if (is_valid(data->game->north))
 		load_xpm(data, north, data->game->north);
 	if (is_valid(data->game->south))
