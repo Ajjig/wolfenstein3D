@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aboudoun <aboudoun@student.42.fr>          +#+  +:+       +#+        */
+/*   By: majjig <majjig@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 16:22:17 by aboudoun          #+#    #+#             */
-/*   Updated: 2022/10/16 22:06:19 by aboudoun         ###   ########.fr       */
+/*   Updated: 2022/10/22 04:46:20 by majjig           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@
 # define WIN_HEIGHT 800
 # define PI M_PI
 # define ROTATE_SPEED 0.07
-# define PLAYER_SPEED 10
+# define PLAYER_SPEED 9
 # define FOV 1.0471975512
 # define MINI 20
 # define VIEW_RANGE 1

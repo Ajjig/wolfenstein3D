@@ -10,8 +10,8 @@ CFILES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isdigit.c
 
 OFILES = $(CFILES:%.c=%.o)
 
-CC = gcc
-W = -c -Wall -Werror -Wextra -Oz
+CC = clang
+W = -c -Wall -Werror -Wextra -Ofast
 INC = libft.h
 NAME = libft.a
 
