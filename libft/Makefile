@@ -11,7 +11,7 @@ CFILES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isdigit.c
 OFILES = $(CFILES:%.c=%.o)
 
 CC = clang
-W = -c -Wall -Werror -Wextra -Ofast
+W = -c -Wall -Werror -Wextra -O3
 INC = libft.h
 NAME = libft.a
 
