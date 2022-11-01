@@ -6,7 +6,7 @@ CFILES = get_next_line.c  get_next_line_utils.c
 OFILES = $(CFILES:%.c=%.o)
 
 CC = clang
-W = -c -Wall -Werror -Wextra -Ofast
+W = -c -Wall -Werror -Wextra -O3
 HEADER = get_next_line.h
 NAME = nextline.a
 
